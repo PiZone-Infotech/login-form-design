@@ -1,0 +1,169 @@
+:root {
+  --primary: #414142;
+  --theme: #8764EB;
+  --btn-color-default: #fff;
+  --alt-color: whitesmoke;
+  --theme-gradient-blue: #5FD8DE;
+  --theme-gradient-purple: #9F8DEA;
+  --theme-gradient-pink: #E83AF8;
+  --btn-padding: 1rem;
+  --box-padding: 3rem;
+  --sm-font: 14px;
+  --md-font: 18px;
+  --lg-font: 24px;
+  --xl-font: 32px;
+  --transform-cap: capitalize;
+  --max-width: 400px;
+  --form-padding: 3rem;
+  --icon-width: 24px;
+  --icon-height: 24px;
+  --default-radius: 50px;
+  --border-value: 1px solid #dedede;
+}
+
+html,
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+
+a {
+  display: inline-block;
+  color: var(--primary);
+  font-size: 14px;
+}
+
+label {
+  display: inline-block;
+}
+
+.btn {
+  padding: var(--btn-padding);
+  border: transparent;
+  border-radius: var(--default-radius);
+  font-size: var(--md-font);
+  font-weight: 700;
+  color: var(--btn-color-default);
+  cursor: pointer;
+}
+
+.gradient-btn {
+  background-image: linear-gradient(to left, var(--theme-gradient-pink), var(--theme-gradient-blue));
+  width: 100%;
+  text-transform: uppercase;
+}
+
+.abs-items {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  overflow: hidden;
+}
+.abs-items span {
+  background-color: var(--alt-color);
+  background-image: linear-gradient(to bottom left, var(--theme-gradient-pink), var(--theme-gradient-purple), var(--theme-gradient-blue));
+  width: 100%;
+  display: block;
+  height: 100%;
+  animation: slide 1s linear 1s infinite alternate;
+  padding: 5px;
+}
+
+.login {
+  min-height: 100vh;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  max-width: var(--max-width);
+  width: 100%;
+  display: flex;
+  padding: var(--box-padding);
+  z-index: 1;
+}
+
+.login-box {
+  width: 100%;
+  padding: var(--form-padding);
+  margin: auto;
+  background-color: white;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.heading {
+  font-size: var(--xl-font);
+  text-align: center;
+}
+
+.link {
+  text-align: right;
+  display: block;
+  margin: 20px 0;
+}
+
+label {
+  margin: 15px 0 0 !important;
+  margin-top: 20px;
+  font-size: var(--sm-font);
+}
+
+.inputs {
+  display: flex;
+  align-items: center;
+  border-bottom: var(--border-value);
+}
+.inputs input {
+  width: calc(100% - var(--icon-width));
+  padding: var(--btn-padding);
+  outline: none;
+  border: none;
+  font-size: var(--md-font);
+}
+.inputs input::-moz-placeholder {
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  opacity: 0.7;
+  font-size: var(--sm-font);
+}
+.inputs input::placeholder {
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  opacity: 0.7;
+  font-size: var(--sm-font);
+}
+.inputs .icon {
+  width: var(--icon-width);
+  height: var(--icon-height);
+}
+
+@keyframes slide {
+  0% {
+    width: 100%;
+  }
+  50% {
+    width: 120%;
+  }
+  100% {
+    width: 250%;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .login-form {
+    padding: 0px;
+    max-width: 90%;
+  }
+  .login-box {
+    padding: 15px;
+    max-width: inherit;
+    width: 90%;
+  }
+}/*# sourceMappingURL=style.css.map */

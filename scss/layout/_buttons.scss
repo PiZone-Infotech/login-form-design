@@ -1,0 +1,15 @@
+.btn{
+    padding: var(--btn-padding);
+    border: transparent;
+    border-radius: var(--default-radius);
+    font-size: var(--md-font);
+    font-weight: 700;
+    color: var( --btn-color-default);
+    cursor: pointer;
+    
+}
+.gradient-btn{
+    background-image: linear-gradient(to left, var(--theme-gradient-pink), var(--theme-gradient-blue));
+    width: 100%;
+    text-transform: uppercase;
+}

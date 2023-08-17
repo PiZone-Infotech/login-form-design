@@ -1,0 +1,47 @@
+:root {
+    // colors
+    // solids
+    --primary: #414142;
+    --theme: #8764EB;
+    --btn-color-default: #fff;
+    --alt-color: whitesmoke;
+    // gradients
+    --theme-gradient-blue: #5FD8DE;
+    --theme-gradient-purple: #9F8DEA;
+    --theme-gradient-pink: #E83AF8;
+    // padding
+    --btn-padding: 1rem;
+    --box-padding: 3rem;
+    // font sizes
+    --sm-font: 14px;
+    --md-font: 18px;
+    --lg-font: 24px;
+    --xl-font: 32px;
+    // transform
+    --transform-cap: capitalize;
+    // width
+    --max-width: 400px;
+    --form-padding: 3rem; 
+    --icon-width: 24px;
+    --icon-height: 24px;
+    // radius
+    --default-radius: 50px;
+    // borders
+    --border-value: 1px solid #dedede;
+}
+html,
+body {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+}
+a {
+    display: inline-block;
+    color: var(--primary);
+    font-size: 14px;
+}
+
+label {
+    display: inline-block;
+}
